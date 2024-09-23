@@ -93,3 +93,4 @@ Obviously, we can see that the time cost of the function **increases** with the 
 
 - `char_count(s: str)`
 
+Trying to write something.
