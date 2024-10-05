@@ -93,4 +93,33 @@ Obviously, we can see that the time cost of the function **increases** with the 
 
 - `char_count(s: str)`
 
-Trying to write something.
+We try to use a dictionary to store the frequency of each character in the input string. The function `char_count` takes a string as input and returns a dictionary with the frequency of each character.
+
+<table>
+  <tr>
+    <th style="background-color: #FFFFFF;">scale</td>
+    <th style="background-color: #d6d6fe;">1e1</td>
+    <th style="background-color: #d6d6fe;">1e2</td>
+    <th style="background-color: #d6d6fe;">1e3</td>
+    <th style="background-color: #d6d6fe;">1e4</td>
+    <th style="background-color: #d6d6fe;">1e5</td>
+    <th style="background-color: #d6d6fe;">1e6</td>
+    <th style="background-color: #d6d6fe;">1e7</td>
+    <th style="background-color: #d6d6fe;">1e8</td>
+  </tr>
+  <tr>
+    <th style="background-color: #fe6062;">time cost</td>
+    <td style="background-color: #FFFFFF;">0.000000</td>
+    <td style="background-color: #FFFFFF;">0.000000</td>
+    <td style="background-color: #FFFFFF;">0.000000</td>
+    <td style="background-color: #FFFFFF;">0.000999</td>
+    <td style="background-color: #FFFFFF;">0.029025</td>
+    <td style="background-color: #FFFFFF;">0.127361</td>
+    <td style="background-color: #FFFFFF;">1.161906</td>
+    <th style="background-color: #900C3F; color: #FFFFFF">12.462080</th>
+  </tr>
+</table>
+
+We can see that the time cost of the function **increases** with the length of the input string. And the increase is **not linear**. See the picture below for better understanding.
+
+![char_count](./pic/char%20count%20time%20cost.png)
