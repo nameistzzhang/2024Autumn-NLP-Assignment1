@@ -122,4 +122,4 @@ We try to use a dictionary to store the frequency of each character in the input
 
 We can see that the time cost of the function **increases** with the length of the input string. And the increase is **not linear**. See the picture below for better understanding.
 
-![char_count](./pic/char%20count%20time%20cost.png)
+![char_count](./rsc/pic/char%20count%20time%20cost.png)
