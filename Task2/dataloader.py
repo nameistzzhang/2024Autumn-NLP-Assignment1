@@ -29,9 +29,6 @@ class DataLoader():
             data = f.readlines()
         data = [line.strip().split('\t') for line in data]
 
-        # 80% of the data is used for training
-        data = data[:int(len(data) * 0.8)]
-
         # convert sentence to tensor of each text and its label
         dataset = []
         for text, label in data:
@@ -63,9 +60,6 @@ class DataLoader():
             data = f.readlines()
         data = [line.strip().split('\t') for line in data]
 
-        # 80% of the data is used for training
-        data = data[int(len(data) * 0.8):]
-
         # convert sentence to tensor of each text and its label
         input_data = []
         label_data = []
@@ -78,7 +72,7 @@ class DataLoader():
             label_data.append(label_tensor)
 
         return input_data, label_data
-        
+            
     def sentence2Tensor(self, sentence : str) -> torch.Tensor:
 
         # get a random sentence and tokenize it
