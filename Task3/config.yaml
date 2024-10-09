@@ -1,0 +1,12 @@
+# path configuration
+train_path: './data/trainset.txt'
+test_path: './data/testset.txt'
+val_path: './data/valset.txt'
+jp_vocab_path: './data/jp_vocab.csv'
+en_vocab_path: './data/en_vocab.csv'
+jp_skipgram_datset_path: './data/jp_skipgram_dataset.csv'
+en_skipgram_datset_path: './data/en_skipgram_dataset.csv'
+
+# skipgram hyperparameters
+skipgram_window_size: 2
+skipgram_batch_size: 128
