@@ -1,4 +1,5 @@
 # path configuration
+
 train_path: './data/trainset.txt'
 test_path: './data/testset.txt'
 val_path: './data/valset.txt'
@@ -6,7 +7,38 @@ jp_vocab_path: './data/jp_vocab.csv'
 en_vocab_path: './data/en_vocab.csv'
 jp_skipgram_datset_path: './data/jp_skipgram_dataset.csv'
 en_skipgram_datset_path: './data/en_skipgram_dataset.csv'
+en_embedding_model_path: './model/embedding/en_embedding_model_large3.pt'
+jp_embedding_model_path: './model/embedding/jp_embedding_model_large3.pt'
+lstm_model_path: './model/lstm/lstm_model_large3.pt'
+attn_model_path: './model/lstm/attn_model_large3.pt'
 
-# skipgram hyperparameters
-skipgram_window_size: 2
-skipgram_batch_size: 128
+# wandb configuration
+wandb_project_name: 'nlp_homework1'
+wandb_run_name: 'lstm_large1'
+
+
+# SKIPGRAM HYPERPARAMETERS
+
+# skipgram configuration
+skipgram_window_size: 5
+
+# skipgram model configuration
+embedding_dim: 512
+
+# skipgram training configuration
+skipgram_batch_size: 512
+skipgram_lr: 0.001
+skipgram_epochs: 100
+skipgram_device: 'cuda:3'
+
+
+
+# LSTM HYPERPARAMETERS
+
+lstm_epochs: 100
+device: 'cuda:3'
+lstm_lr: 0.001
+lstm_lr_decay: 0.8
+lstm_batchsize: 512
+attention_headnum: 1
+hidden_size: 2048
